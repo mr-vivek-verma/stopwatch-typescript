@@ -11,7 +11,7 @@ function Access(props:Props) {
 
     const handleStartButton = (e: object) => {
         const interval:any = setInterval(() => {
-            setTimeInSeconds((previousState:number) => previousState + 1);
+            setTimeInSeconds((previousState:number) => previousState --);
         }, 1000);
 
         setIntervalId(interval);
