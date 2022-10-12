@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
-import { InnerBgStyle, MainTimerLineStyle, MainTimerStyle, StatusStyle, TimerInfoStyle } from './TimerClock.styles';
-import CircularProgress from '@mui/material/CircularProgress';
+import { InnerBgStyle, MainTimerStyle, StatusStyle, TimerInfoStyle } from './TimerClock.styles';
+// import CircularProgress from '@mui/material/CircularProgress';
 import { useEffect, useState } from 'react';
 import { Font, Mode } from '../../utils/enum';
 
@@ -31,7 +31,7 @@ function convertTime(secondsLeft: number) {
   }
   output += `${addLeadingZeroes(mins)}:${addLeadingZeroes(secs)}`;
 
-  return output;
+  return output;     
 }
 
 export default function TimerClock({ currentselectedcolour, defaultSeconds, mode, font }: TimeClockProps) {
@@ -91,38 +91,21 @@ export default function TimerClock({ currentselectedcolour, defaultSeconds, mode
 
   return (
     <Box component='main' width='100%'>
-      <Box
+      <Box 
         component='a'
         onClick={onTimerButtonClick}
         sx={{
-          ...MainTimerStyle,
+          // ...MainTimerStyle,
           '&:hover': {
             cursor: 'pointer',
-            '.timer-status': {
-              color: currentselectedcolour,
+            '.timer-status': {     
+              color: currentselectedcolour,   
             },
           },
-        }}
-      >
+        }}    
+      >      
         <Box sx={InnerBgStyle}>
-          <CircularProgress
-            aria-label='time left'
-            variant='determinate'
-            size='100%'
-            value={(seconds / defaultSeconds) * 100}
-            thickness={1.5}
-            sx={(theme) => ({
-              ...MainTimerLineStyle,
-              '&.MuiCircularProgress-root': {
-                color: currentselectedcolour,
-              },
-              [theme.breakpoints.down('sm')]: {
-                '& .MuiCircularProgress-circle': {
-                  strokeWidth: 1,
-                },
-              },
-            })}
-          />
+          
           <Box sx={TimerInfoStyle}>
             <Box
               component='span'

@@ -1,11 +1,10 @@
 import Container from '@mui/material/Container';
 import { useState } from 'react';
 import { ApplicationData } from '../../utils/interfaces';
-import NavBar from ".././NavBar/NavBar";
-import TimerClock from "../.././components/Timer/TimerClock";
-import { MainContentStyles } from '../Main/Main.styles';
-
-import { Font, Mode } from ".././../utils/enum";
+import NavBar from '../NavBar/NavBar';
+import TimerClock from '../Timer/TimerClock';
+import { MainContentStyles } from '.././Main/Main.styles';
+import { Font, Mode } from "../../utils/enum";
 
 const defaultData: ApplicationData = {
   pomodoro: 25,
@@ -16,7 +15,7 @@ const defaultData: ApplicationData = {
 };
 
 const colorTable: Record<string, string> = {
-  red: '#F87070',
+  red: '#508588',
   blue: '#70F3F8',
   purple: '#D881F8',
 };
@@ -24,15 +23,16 @@ const colorTable: Record<string, string> = {
 export default function MainContent() {
   const [applicationData, setApplicationData] = useState<ApplicationData>(defaultData);
   const [mode, setMode] = useState<Mode>(Mode.Pomodoro);
-  const [openModal, setOpenModal] = useState<boolean>(false);
-
+  
+  
 
   return (
     <>
       <Container maxWidth='sm' sx={MainContentStyles}>
         <NavBar font={applicationData.font} currentselectedcolour={colorTable[applicationData.color]} mode={mode} setMode={setMode} />
-        <TimerClock font={applicationData.font} mode={mode} defaultSeconds={applicationData[mode] * 60} currentselectedcolour={colorTable[applicationData.color]} 
+        <TimerClock font={applicationData.font} mode={mode} defaultSeconds={applicationData[mode] * 60} currentselectedcolour={colorTable[applicationData.color]} />
       </Container>
-      </>
+      
+    </>
   );
 }

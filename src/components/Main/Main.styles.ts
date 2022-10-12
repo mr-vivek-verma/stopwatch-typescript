@@ -4,6 +4,6 @@ export const MainContentStyles: SxProps<Theme> = {
   minHeight: '100vh',
   minWidth: 360,
   display: 'flex',
-  justifyContent: 'space-evenly',
-  gap: 3.75,
+  justifyContent: " center",
+  // gap: 2,
 };

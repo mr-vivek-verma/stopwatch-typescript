@@ -5,10 +5,10 @@ export const theme = createTheme({
   palette: {
     primary: {
       main: '#1E213F',
-      dark: '#161932',
+      dark: '#5E9CA0',
     },
     secondary: {
-      main: '#D7E0FF',
+      main: '#FFFFFF',
       light: '#EFF1FA',
     },
   },
@@ -21,7 +21,7 @@ export const theme = createTheme({
     h3: {
       color: '#161932',
       fontSize: 13,
-      letterSpacing: 5,
+      // letterSpacing: 5,
       textTransform: 'uppercase',
     },
   },
@@ -38,7 +38,7 @@ export const theme = createTheme({
     MuiCssBaseline: {
       styleOverrides: {
         body: {
-          backgroundColor: '#1E213F',
+          backgroundColor: '#4C9195',
         },
       },
     },

@@ -4,7 +4,7 @@ import { centerContent } from '../../utils';
 export const MainTimerStyle: SxProps<Theme> = {
   ...centerContent,
   backgroundImage: 'linear-gradient(125deg, #0E112A 0%, #2E325A 100%)',
-  borderRadius: '50%',
+  borderRadius: '10%',
   minWidth: '100%',
   aspectRatio: '1/1',
   boxShadow: '-45px -25px 90px -55px #2e325a, 45px 25px 90px -55px #0e112a;',
@@ -12,18 +12,14 @@ export const MainTimerStyle: SxProps<Theme> = {
 
 export const InnerBgStyle: SxProps<Theme> = {
   backgroundColor: (theme: Theme) => theme.palette.primary.dark,
-  width: '95%',
+  width: '100%',
   aspectRatio: '1/1',
-  borderRadius: '50%',
+  // borderRadius: '100%',
   position: 'relative',
 };
 
-export const MainTimerLineStyle = {
-  p: 2,
-  '& .MuiCircularProgress-circle': {
-    strokeLinecap: 'round',
-  },
-};
+
+
 
 export const TimerInfoStyle: SxProps<Theme> = {
   ...centerContent,
