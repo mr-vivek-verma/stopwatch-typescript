@@ -1,6 +1,5 @@
 import Box from '@mui/material/Box';
 import { InnerBgStyle, MainTimerStyle, StatusStyle, TimerInfoStyle } from './TimerClock.styles';
-// import CircularProgress from '@mui/material/CircularProgress';
 import { useEffect, useState } from 'react';
 import { Font, Mode } from '../../utils/enum';
 

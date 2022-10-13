@@ -14,7 +14,6 @@ export const InnerBgStyle: SxProps<Theme> = {
   backgroundColor: (theme: Theme) => theme.palette.primary.dark,
   width: '100%',
   aspectRatio: '1/1',
-  // borderRadius: '100%',
   position: 'relative',
 };
 
@@ -29,11 +28,35 @@ export const TimerInfoStyle: SxProps<Theme> = {
   left: '50%',
   flexDirection: 'column',
   transform: 'translate(-50%, -50%)',
+
 };
 
 export const StatusStyle = {
-  textTransform: 'uppercase',
-  letterSpacing: 15,
-  fontWeight: 700,
-  fontSize: 16,
+  textTransform: 'uppercase',        
+  letterSpacing: 15,                               
+  fontWeight: 700,                            
+  fontSize: 16,           
+
+
+  
+   
+
+              
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
 };
