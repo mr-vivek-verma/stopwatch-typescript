@@ -22,25 +22,38 @@ export default function FormDialog() {
   };
 
   return (
+  
     <div>
-      <Box component="span"  onClick={handleClickOpen} sx={{ p: 2,ml: "450px", border: '2px dashed white' , justifyContent:"center", display:"flex", width: 450 }}>
+      <Box component="span"  onClick={handleClickOpen} sx={{ p: 2,ml: "450px", border: '2px dashed white' , justifyContent:"center", display:"flex", width: 450  }}>
       <Button>
       <AddCircleIcon/>
       Add Task</Button>
       </Box>
       <Dialog open={open} onClose={handleClose}>
-        {/* <DialogTitle>Save</DialogTitle> */}
+        <DialogTitle>What are you working on?</DialogTitle>
         <DialogContent>
-          <DialogContentText>
+          {/* <DialogContentText>
             What are you working on?
-          </DialogContentText>
+          </DialogContentText> */}
           <TextField
             autoFocus
             margin="dense"
             id="name"
             // label="Email Address"
-            type="email"
-            fullWidth
+            type="text"
+            fullWidth 
+            variant="standard"
+          />
+          <DialogContentText>
+          Est Pomodoros
+          </DialogContentText>
+          <TextField
+            autoFocus
+            margin="dense"
+            id="name"
+            label="Add Notes"
+            type="text"
+            fullWidth 
             variant="standard"
           />
         </DialogContent>
