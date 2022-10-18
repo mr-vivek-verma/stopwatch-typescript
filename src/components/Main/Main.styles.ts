@@ -5,5 +5,6 @@ export const MainContentStyles: SxProps<Theme> = {
   minWidth: 360,
   display: 'flex',
   justifyContent: " center",
+  
   // gap: 2,
 };
