@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css';
+// import './App.css';
 import { TodoForm } from '.././Todo/TodoForm';
 import { TodoList } from '.././Todo/TodoList';
 // import  interfaces  from '../../utils/interfaces';
@@ -22,7 +22,7 @@ type Option = {
 }
 
 function Todo() {
-  const [todos, setTodos] = useState<Array<typeof Todo>>([]);
+  const [todos, setTodos] = useState<Array< Todo>>([]);
 
   const toggleComplete: ToggleComplete = selectedTodo => {
     const updatedTodos = todos.map(todo => {
@@ -54,9 +54,9 @@ function Todo() {
   return (
     <div className="todo-app">                                                                             
       <header>                       
-        <h1>                                                                                                           
+        {/* <h1>                                                                                                           
         Todo App                                              
-        </h1>                      
+        </h1>                       */}
       </header>
       <TodoForm addTodo={addTodo}/>
       <TodoList todos={todos} toggleComplete={toggleComplete} onRemoveTodo={removeTodo} editTodo={editTodo}/>

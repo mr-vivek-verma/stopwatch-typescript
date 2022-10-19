@@ -29,8 +29,8 @@ export default function NavBar({ currentselectedcolour, mode, setMode, font }: N
               backgroundColor: currentselectedcolour,
             },
           }}
-          value={Mode.Pomodoro}
-          aria-label={Mode.Pomodoro}
+          value={Mode.Pomodoro}                                                                
+          aria-label={Mode.Pomodoro}                                               
         >
           <Box component='span'>{Mode.Pomodoro}</Box>
         </ModeButton>

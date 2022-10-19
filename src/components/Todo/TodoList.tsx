@@ -1,5 +1,6 @@
 import React from "react";
 import { TodoListItem } from './TodoListItem';
+import toggleComplete from "../Todo/Todo"
 
 type RemoveTodo = (todoToRemove: Todo) => void;
 type EditTodo = (todoToEdit: Todo) => void;

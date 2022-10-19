@@ -1,0 +1,54 @@
+// import * as React from "react";
+// import * as ReactDOM from "react-dom";
+// import FirstComponent from './components/FirstComponent'
+// import UserComponent from './components/UserComponent'
+// import Box from '@mui/material/Box';
+// import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+// import { MouseEvent, Dispatch, SetStateAction } from 'react';
+// import { ToggleButtonGroupStyles } from './NavBar.styles';
+// import { Mode } from "../../utils/enum";
+// import { ModeButton } from "./Assets/ModeButton";
+// ReactDOM.render(
+//     <Box component='nav'>
+//     <ToggleButtonGroup sx={ToggleButtonGroupStyles} value={mode} exclusive onChange={handleChange}>
+//       <ModeButton
+//         sx={{
+//           fontFamily: font,
+//           '&.Mui-selected, &.Mui-selected:hover': {
+//             backgroundColor: currentselectedcolour,
+//           },
+//         }}
+//         value={Mode.Pomodoro}
+//         aria-label={Mode.Pomodoro}
+//       >
+//         <Box component='span'>{Mode.Pomodoro}</Box>
+//       </ModeButton>
+//       <ModeButton
+//         sx={{
+//           fontFamily: font,
+//           '&.Mui-selected, &.Mui-selected:hover': {
+//             backgroundColor: currentselectedcolour,
+//           },
+//         }}
+//         value={Mode.ShortBreak}
+//         aria-label={Mode.ShortBreak}
+//       >
+//         <Box component='span'>{Mode.ShortBreak.replace('_', ' ')}</Box>
+//       </ModeButton>
+//       <ModeButton
+//         sx={{
+//           fontFamily: font,
+//           '&.Mui-selected, &.Mui-selected:hover': {
+//             backgroundColor: currentselectedcolour,
+//           },
+//         }}
+//         value={Mode.LongBreak}
+//         aria-label={Mode.LongBreak}
+//       >
+//         <Box component='span'>{Mode.LongBreak.replace('_', ' ')}</Box>
+//       </ModeButton>
+//     </ToggleButtonGroup>
+//   </Box>,
+//     document.getElementById("root")
+// );
+export {}
