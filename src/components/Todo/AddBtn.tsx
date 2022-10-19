@@ -58,8 +58,8 @@ export default function FormDialog() {
           />
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleClose}>Save</Button>
+          <Button onClick={handleClose}>Cancel</Button>                             
+          <Button onClick={handleClose}>Save</Button>                               
         </DialogActions>
       </Dialog>
     </div>
