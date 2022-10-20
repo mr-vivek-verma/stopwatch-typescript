@@ -8,6 +8,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Box from '@mui/material/Box';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
+import { Card } from '@mui/material';
 
 
 
@@ -33,8 +34,8 @@ export default function FormDialog() {
   return (
      
     <div>
-      <div>
-      <Box component="span"  onClick={handleClickOpen} sx={{ p: 2,ml: "450px", justifyContent:"center", display:"flex", width: 450  }}>
+      <div >
+      <Box sx={{ p: 2,ml: "450px", justifyContent:"center", display:"flex", width: 450  }}>
       <TextField
       hiddenLabel
       id="filled-hidden-label-small"
