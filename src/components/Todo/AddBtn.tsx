@@ -10,8 +10,11 @@ import Box from '@mui/material/Box';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 
+
 export default function FormDialog() {
   const [open, setOpen] = React.useState(false);
+  const [add , setAdd] = React.useState<any>();
+  const [addSub , setAddSub] = React.useState<any>();
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -21,9 +24,29 @@ export default function FormDialog() {
     setOpen(false);
   };
 
-  return (
+  const handleClear = (event: any) => {
+    setAdd("");
+    setAddSub("");
+  };
   
+
+  return (
+     
     <div>
+      <div>
+      <Box component="span"  onClick={handleClickOpen} sx={{ p: 2,ml: "450px", justifyContent:"center", display:"flex", width: 450  }}>
+      <TextField
+      hiddenLabel
+      id="filled-hidden-label-small"
+      defaultValue= {addSub}
+      value= {add}
+      variant="filled"
+      size="small"
+      />
+      <Button onClick={handleClear}>Clear</Button>
+      </Box>
+      </div>
+     
       <Box component="span"  onClick={handleClickOpen} sx={{ p: 2,ml: "450px", border: '2px dashed white' , justifyContent:"center", display:"flex", width: 450  }}>
       <Button>
       <AddCircleIcon/>
@@ -36,6 +59,8 @@ export default function FormDialog() {
             What are you working on?
           </DialogContentText> */}
           <TextField
+          value={add}
+          onChange={(e:any) =>{setAdd(e.target.value)}}
             autoFocus
             margin="dense"
             id="name"
@@ -48,6 +73,8 @@ export default function FormDialog() {
           Est Pomodoros
           </DialogContentText>
           <TextField
+          value={addSub}
+          onChange={(e:any) =>{setAddSub(e.target.value)}}
             autoFocus
             margin="dense"
             id="name"
@@ -58,10 +85,11 @@ export default function FormDialog() {
           />
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Cancel</Button>                             
-          <Button onClick={handleClose}>Save</Button>                               
+          <Button onClick={handleClose}>Cancel</Button>
+          <Button onClick={handleClose}>Save</Button>
         </DialogActions>
       </Dialog>
+      
     </div>
   );
 }

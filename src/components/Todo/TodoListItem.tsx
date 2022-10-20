@@ -59,7 +59,7 @@ export const TodoListItem: React.FC<TodoListItemProps> = ({ todo, toggleComplete
       <input
         type="checkbox"
         onChange={() => toggleComplete(todo)}
-        checked={todo.complete}
+        // checked={todo.complete}
         />
         {isEditOn ? <input className="edit-input" type="text" value={inputText} onChange={(e) => onTodoUpdate(e)}/> : todo.text}
       </label>

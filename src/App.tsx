@@ -12,7 +12,7 @@ function App() {
       <Main/>
       <ThreeDots/>
       <AddBtn/>
-      <Todo/>
+      {/* <Todo/> */}
       </ThemeProvider>
 
 
