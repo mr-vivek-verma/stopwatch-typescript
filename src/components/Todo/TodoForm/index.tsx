@@ -36,7 +36,7 @@ const TodoForm: FC<Props> = ({ addTodo }) => {
     <>
     <form className="todoForm" onSubmit={handleTodo}>
       <div className="form-group">
-       <Box component="span"  onClick={(e:any)=>{handleClickOpen()}} sx={{ p: 4,ml: "100px", border: '2px dashed white' , justifyContent:"center", display:"flex", width: 450  }}>
+       <Box component="span"  onClick={(e:any)=>{handleClickOpen()}} sx={{ p: 4,ml: "100px",mt:"-50px", border: '2px dashed white' , justifyContent:"center", display:"flex", width: 450  }}>
       <Button>
       <AddCircleIcon/>
       Add Task</Button>
