@@ -3,20 +3,11 @@ import { ITodo } from "../../../utils/interfaces";
 import TodoForm from "../TodoForm/index";
 import TodoList from "../TodoList/index";
 import "../main_todo/Todo.css"
-import AddBtn from "../AddBtn";
+
 
 const Todo: FC = () => {
   const [todoList, setTodoList] = useState<ITodo[]>([
-    {
-      id: 1,
-      todo: "test todo",
-      completed: true,
-    },
-    {
-      id: 2,
-      todo: "do coding",
-      completed: false,
-    },
+  
   ]);
 
   const addTodo = (todo: string): void => {
@@ -57,7 +48,7 @@ const Todo: FC = () => {
   return (
     <div className="app">
       <div className="container">
-        {/* <TodoForm addTodo={addTodo} /> */}
+        <TodoForm addTodo={addTodo} />
         {/* <AddBtn addTask={addTodo}/> */}
         <div className="todoList">
           {todoList.map((todo: ITodo, key: number) => (
